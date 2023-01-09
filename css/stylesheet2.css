@@ -1,0 +1,50 @@
+.ma-t10{
+    
+    margin-top: 10px;
+}
+.ma-t2{
+    margin-top:   2px;
+}
+.ma-t40{
+    margin-top: 40px;
+}
+.ma-b5{
+    margin-bottom: 5px;
+}   
+.ma-b10{
+    margin-bottom:10px;
+}   
+.ma-b70{
+    margin-bottom: 70px;
+}   
+.ma-b20{
+    margin-bottom: 20px;
+}   
+.ma-b15{
+    margin-bottom: 15px;
+}   
+.ma-b40{
+    margin-bottom: 40px;
+}   
+.ma-l10{
+    margin-left: 10px;
+}
+.ma-l250{
+    margin-left: 250px;
+}
+.ma-r10{
+    margin-right: 10px;
+}
+.uppercase{
+    text-transform:uppercase ;
+}
+.capitalize{
+    text-transform:capitalize ;
+}
+.float-left{
+    float: left;
+}
+.overflow{
+    overflow:hidden ;
+}
+

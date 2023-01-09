@@ -1,0 +1,582 @@
+
+
+ /* > the Index
+    1-General styles
+    2-Sections Styles
+       2.0 Header Section
+       2.1 Home Section
+       2.2 About Section
+       2.3 Portfolio Section
+       2.4 Services Section
+       2.5 Prices Section
+       2.6 Team Section
+       2.7 Blog Section
+       2.8 Contact Section  
+       2.9 footer Section */
+
+
+
+
+/* 1-general styles */
+body{
+    font-family:"VarelaRound-Regular";
+}
+@font-face {
+    font-family:"VarelaRound-Regular" ;
+    src: url(../fonts/VarelaRound-Regular.ttf);
+}
+      
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0s;
+    
+} 
+.clear{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --maincolor : rgb(63, 95, 238);
+    --whitecolor :white;
+}
+/*    2-Sections Styles     */
+/*    2.0 Header Section    */
+
+.header {
+     
+    height: 50px;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+.container{
+    margin: auto;
+    height:auto;
+    width: 90%;
+}
+.header .logo{
+    width: 50%;
+}
+.header .nuv{
+    width: 50%;
+    list-style-type:  none;
+    text-align: right;
+}
+.header .nuv > li{
+    display: inline-block;
+}
+.header .nuv > li > a {
+    text-decoration: none;
+    font-size: 9px;
+    color:  rgb(255, 255, 255);
+    display: block;
+    padding:  10px 11px;
+    margin-top: 10px;
+}
+.header .nuv > li > a::after{
+    content: "";
+    width: 0;
+    display: block;
+    height: 3px;
+    transition:width 0.5s;
+
+
+}
+
+.header .nuv > li .ho::after{
+    content: "";
+    width: 100%;
+    display: block;
+    height: 3px;
+    transition:width 0.5s;
+    background-color: var(--maincolor);
+    
+    
+
+}
+.header .nuv > li > a:hover::after{
+
+content: "";
+    width: 100%;
+    display: block;
+    height: 3px;
+    transition:width 0.5s;
+    background-color: var(--maincolor);
+    margin-top: 2px;
+
+}
+
+.header .logo img{
+    width: 25%;
+   
+}
+.dropdown-p{
+    position: relative;
+}
+.dropdown{
+  
+    width: 90px;
+    position: absolute;
+    font-size: 10px;
+    left: -50%;
+    top: 100%;
+    
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    transition:  0.4s  ;
+     
+    
+    
+
+}
+.dropdown a{
+     color: var(--whitecolor);
+    text-decoration: none ;
+    background-color: var(--maincolor);
+    list-style-type: none;
+    display: block;
+    margin-bottom: 5px;
+    padding:9px;
+}
+.dropdown-p:hover .dropdown{
+    opacity: 1;
+    visibility: visible;
+}
+ /* 2.1 Home Section */
+ .home{
+     position: relative;
+     height: 100vh;
+     background-image: url(../image/images/background/background1.webp);
+     background-size: cover;
+      
+     
+     
+ }
+ .home-content{
+     position: absolute;
+     top: 48%;
+     left: 50%;
+     transform:translate(-50% ,-50%);
+     
+     
+ }
+ .over-lay{
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background-color: rgb(0, 0, 0,0.6);
+     top: 0;
+     left: 0;
+ }
+ .home-content .tittle{
+     font-size: 40px;
+     color: var(--whitecolor);
+     text-align: center;
+     margin-bottom: 10px;
+     text-transform: uppercase;
+ }
+ .home .home-content .p{
+     text-align: center;
+     width: 700px;
+     letter-spacing: 2px;
+     line-height:30px ;
+     color: var(--whitecolor);
+     font-size: 11px;
+
+ }
+ .button{
+     position:relative;
+     left: 200px;
+     top: 50px;
+     width: 150px;
+     height: 50px;
+     border: 0;
+     border-radius: 5%;
+     z-index: 2;
+     
+     
+
+ }
+ .button-start{
+    margin-right: 10px ;
+    background-color: var(--whitecolor);
+ }
+.button-learn{
+    background-color: var(--maincolor);
+    color: var(--whitecolor);
+}
+button:hover ,a:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* 2.2 About Section */
+.section-tittle{
+    text-align: center;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    
+}
+.under-line{
+    height: 5px;
+    width: 60px;
+    margin: auto;
+    background-color: var(--maincolor);
+    margin-bottom: 70px;
+}
+.about-content{
+    width: 100%;
+     text-align: center;
+    
+}
+.about-content .s-sec{
+    display: inline-block;
+    width: 30%;
+    border: 2px solid rgba(194, 191, 191, 0.712);
+    padding: 40px 10px ;
+}
+.sec-marg{
+    margin:0 2% ;
+}
+.about-content i{
+ color:var(--maincolor); 
+ margin-bottom: 20px;
+ overflow: hidden;
+}
+.desc{
+    font-size: 10px;
+    color: rgb(160, 156, 156);
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    
+}
+.tittle{
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+
+.pad-sec{
+    padding: 120px 0px;
+    
+}
+.s-sec{
+    position: relative; 
+}
+.about-content .s-sec > a{
+    color:var(--maincolor); 
+    margin-bottom: 40px; 
+}
+
+.about-content .ef::after{
+    position: absolute;
+    content: "";
+    width:100%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0; 
+    background-color: rgba(0, 0, 0, 0.993);
+    z-index: -1;
+    transition: height 0.5s;
+    
+}
+.about-content .ef:hover::after{
+   height: 100%;
+   
+}
+.about-content .s-sec:hover .tittle{
+    color: var(--whitecolor);
+    transition: color 0.5s;
+}.padd{
+    padding: 120px 20px;
+}
+ 
+
+.Portfolio{
+    background-color: #e9e9e9;
+    width: 100%;
+    height: 800px;
+    box-sizing: border-box;
+    
+}
+.Portfolio-content{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+.Portfolio .Portfolio-content .img{
+    display: inline-block;
+    width: 30%;
+    position: relative;
+   
+    margin: 1% ;
+    padding: 10px;
+
+}
+.Portfolio .Portfolio-content img{
+    position: relative;
+    width: 100%;
+    height: 40%;
+  
+}
+.layer-hover{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.699);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s;
+} 
+.Portfolio .Portfolio-content .img:hover .layer-hover{
+    opacity: 1;
+    visibility: visible;
+}
+.layer-hover .co-layer-hover{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   width: 100%;
+   color: var(--whitecolor);
+   line-height: 25px;
+   margin-top: 10px;
+   
+}
+
+.co-layer-hover i{
+    width: 40px;
+    height: 40px;
+    background-color:var(--maincolor); 
+    line-height: 40px; 
+    margin-top:10px;
+    color: var(--whitecolor);
+    position: relative;
+    top:20px;
+    transition: 0.5s;
+     transition-delay: 0.3s;
+     opacity: 0;
+     visibility: hidden;
+}
+.co-layer-hover h3{
+    color:var(--maincolor);  
+    text-transform: uppercase;
+   
+    position: relative;
+    top:40px;
+    transition: 0.5s;
+     transition-delay: 0.1s;
+     opacity: 0;
+     visibility: hidden;
+}
+.co-layer-hover p{
+    
+    position: relative;
+    top:30px;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+    opacity: 0;
+    visibility: hidden;
+}
+.Portfolio-content .img:hover .co-layer-hover p{
+    opacity: 1;
+    top:0px;
+    visibility: visible;
+   
+}
+
+.Portfolio-content .img:hover .co-layer-hover i{
+    opacity: 1;
+    top:0px;
+    visibility: visible;
+   
+}
+.Portfolio-content .img:hover .co-layer-hover h3{
+    opacity: 1;
+    top:0px;
+    visibility: visible;
+   
+
+ }   
+ .Services-content{
+     overflow: hidden;
+     
+ }
+ 
+ .item{
+     margin: 1%;
+     width: 31.3%;
+     height: 30%;
+     border: 2px solid rgb(163, 163, 163);
+     padding: 20px 20px;
+     position: relative;
+     overflow: hidden;
+ }
+ .item .i{
+     width: 15%;
+     height: 100%;
+     color:var(--maincolor); 
+    
+     padding-top: 2px;
+     
+     
+     
+ }
+ .h-p h2{
+     font-size: 20px;
+     margin-bottom: 15px;
+     
+ }
+ .h-p p{
+     font-size: 12px;
+     text-transform: capitalize;
+     line-height: 25px;
+     color: rgba(146, 142, 142, 0.911);
+ }
+ .item::after{
+     content: "";
+     background-color: rgb(0, 0, 0);
+     width: 0;
+     height: 100%;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     left: 0;
+     transition:width 0.5s ;
+     z-index: -1;
+ }
+ .item:hover::after{
+     width: 100%;
+ }
+.item:hover .h-p h2{
+    color: var(--whitecolor);
+} 
+.btn-p{
+    width: 100%;
+    position: relative;
+}
+.btn{
+    position:absolute;
+    bottom: 50%;
+    left: 52%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 70px;
+    
+    z-index: 1;
+    border: 0;
+    
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    background-image:linear-gradient(to bottom,rgb(0, 204, 255) ,rgb(0, 119, 255),rgb(0, 55, 128)) ;
+    position: relative;
+}
+.btn a{
+    color: var(--whitecolor);
+}
+ .btn::after{
+    top:0;
+    left:0;
+    
+ }
+
+.btn::after,.btn::before{
+    content: "";
+    position: absolute;
+    height:0 ;
+    width: 3px;
+    background-color: rgb(0, 0, 0);
+    /* background-image: linear-gradient(to top ,black  ,white,red); */
+    /* background-image: linear-gradient(to top ,rgb(22, 134, 238)  ,rgb(46, 12, 240),rgb(119, 0, 255)); */
+    
+
+}
+.btn::before{
+    right: 0;
+    bottom: 0;
+}
+.btn:hover.btn::after,.btn:hover.btn::before{
+    height: 99%;
+    transition: height 0.3s;
+}
+.btn-p span{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.btn-p span::after,.btn-p span::before{
+    content: "";
+    position: absolute;
+    height:3px ;
+    width: 0;
+    /* background-image: linear-gradient(to top ,rgb(22, 134, 238)  ,rgb(46, 12, 240),rgb(119, 0, 255)); */
+ background-color: black;
+}
+.btn-p span::after{
+    top: 0;
+    right: 0;
+    z-index: -1;
+   
+}
+.btn-p span::before{
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+
+.btn-p:hover.btn-p span::after,.btn-p:hover.btn-p span::before{
+ width: 99%;
+ transition: width 0.3s;
+ transition-delay: 0.1s;
+}
+.icon .i{
+    background-color:var(--maincolor);
+    position: relative;
+    color: var(--whitecolor);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   margin-left: 10px;
+}
+.icon .i > i{
+    position: absolute;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    
+   
+}
+.i-log{
+    padding: 100px;
+    width: 100%;
+   position: relative;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+.icon{
+    margin-left: 250px;
+    margin-top: 40px;
+   overflow: hidden;
+
+}
+.i-log > img{
+    position: absolute;
+    bottom:150px;
+    left: 420px;
+    
+}
